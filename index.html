@@ -3,42 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 25.09.09 실습</title>
+    <title>Document</title>
+    <style>
+        html, body {margin: 0; padding: 0; height: 100%}
+        header{width:100%; height: 10%; background: yellowgreen;}
+        nav{width: 15%; height: 90%; float: left; background: lightcyan;}
+        section{width: 80%; height: 90%; float: left; background: mediumseagreen;}
+        aside{width: 5%; height: 90%; float: left; background:mediumslateblue;}
+        
+    </style>
 </head>
 <body>
-    <h1> 소개글 </h1>
+    <!-- 시맨틱 태그를 이용하여 페이지 구조화하기 -->
+    <header><h1>춘봉이가 알려주는 평면파 개형</h1></header>
+    <hr>
+    <nav>
+        <p><h1>목차</h1></p>
+
+        <ul>
+            <li>오늘의 춘봉이</li>
+            <li>복소 유전율</li>
+            <li>평면파</li>
+        </ul>
+    </nav>
+    <section>
+        <h1>본문</h1>
+        <hr>
+        <h2>오늘의 춘봉이</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8jdJXv4fgx_dim7hUBKHjQO05nHRy9w9pg&s" width="150" height="100">
+        <div style="background-color: lightpink; width: 550px">
+            <p>반가워. 나는 "<span style="color:red">알파</span>와 <span style="color:blue">오메가</span>"에서 "와"를 생략하는 편이야. 자세한 설명은 생략할게</p>
+        </div>
+        
+        <hr>
+        <h2>복소 유전율</h2>
+        
+        <div style="background-color: limegreen; width: 900px">
+            <p><span style="color: blueviolet">도전율(Conductivity)</span>이 0이 아닌 <span style="color: blueviolet">손실 매질(Lossy Medium)</span>의 경우 기존의 진공 상태 유전율(8.854*10^(-12) F/m)을 사용할 수 없어.</p>
+            <p>따라서 맥스웰 방정식의 앙페르 주회법칙에 따라, 도전율 항을 포함하여 새롭게 유전율을 계산해야 하지.</p>
+            <p>한편, 구리나 알루미늄과 같이 도전율이 매우 큰 경우 복소유전율의 근사가 가능해</p>
+        
+        </div>
+        
+        <hr>
+
+        <h2>평면파</h2>
+
+        <div style = "background-color: skyblue; width: 1150px">
+            <p>평면파의 기본 개형은 y = C*exp(-jBz)야. <span style="color:orangered">전파상수(Propagation Constant)</span>에 해당하는 B에 새롭게 구한 복소유전율을 적용하면 평면파 식은 진동항과 감쇠항으로 나누어져.</p>
+            <p>손실매질에서의 평면파 개형은 C*exp(-jBz)exp(-az)가 돼. 앞의 항은 진동(oscillation)하며, 뒤의 항은 감쇠(damping)하지.</p>
+            <p>따라서 손실 매질에서의 평면파는 포락선(Envelope)인 exp(-z), -exp(-z)를 따라 진동하며 z=0으로 수렴해.</p>
+            <p>어때 정말 쉽지?</p>
+        </div>
+       
+
+        
+        
+    </section>
+    <aside>(사이트맵)</aside>
     
-    <h2> 간단한 소개 </h2>
 
-    <p> 안녕하세요, 충남대학교에 재학 중인 배진태입니다.</p>
-
-    <h2> 세부 정보 </h2>
-
-    <ol>
-        <li> 학과: 전기공학과 </li>
-        <li> 학번: 201902052 </li>
-        <li> 학기: 4학년 2학기 </li>
-    </ol>
-
-    <h2> 기타 문의</h1>
-    <p> 궁금한 사항이 있다면 아래 웹페이지에서 연락주시면 감사하겠습니다.</p>
     
-    <ul>
-        <li>현재 탭에서 열기: <a href="http://www.naver.com" >http://www.naver.com</a></li>
-        <li>새 탭에서 열기: <a href="http://www.naver.com" target="_blank">http://www.naver.com</a></li>
-    </ul>
-    
-    <br>
 
-    <!-- 외부 주소 참조 -->
-    <p>춘봉이</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8jdJXv4fgx_dim7hUBKHjQO05nHRy9w9pg&s" alt="춘봉이">
-
-     <!-- 컴퓨터 내 폴더 참조 -->
-    <p>모자 쓴 춘봉이</p>
-    <img src="image/춘봉이.png" width="300" alt="모자 쓴 춘봉이">
 
 </body>
-
 </html>
 
