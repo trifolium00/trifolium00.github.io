@@ -1,0 +1,19 @@
+#identity{
+    text-align: right;
+    background-color: rgb(185, 224, 241);
+}
+
+.header{
+    background-color: rgb(185, 224, 241);
+    height: 200px;
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+.section{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    display : flex;
+    align-items: center;
+}
