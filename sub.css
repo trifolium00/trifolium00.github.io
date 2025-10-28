@@ -1,0 +1,43 @@
+#identity{
+    text-align: right;
+    background-color: rgb(185, 224, 241);
+}
+
+.head{
+    background-color: rgb(185, 224, 241);
+    height: 120px;
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+.container{
+    display: flex;
+}
+
+.navigation{
+    float: left;
+    width:15%;
+    border: 1px solid black;
+    height: 740px;
+    background-color: bisque;
+    padding-left: 20px;
+
+}
+
+.navigation_bottom{
+    margin-top: 380px;
+    padding-left: 20px
+}
+
+.main_sector{
+    float: left;
+    width:100%;
+    border: 1px solid black;
+    flex: 1;
+    background-color: rgb(178, 241, 220);
+}
+
+ol{
+    line-height: 3;
+}
