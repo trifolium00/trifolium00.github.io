@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- 동적 페이지를 구성하기 위해 별도의 js 파일 연결 -->
+    <script src="main.js"></script>
+
+    <!-- 원활한 style 수정을 위해 별도의 css 파일 연결 -->
+    <link rel="stylesheet" href="sub.css">
 </head>
+
 <body>
-    (p형 반도체와 n형 반도체를 구분하는 carrier에 대해 기술할 페이지입니다.)
+    <header class="head">
+
+        <h1> 다이오드의 이해</h1>
+
+        <div id="identity">
+            <p>전기공학과 / 201902052 / 배진태 &nbsp;</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <h2> &nbsp;목차</h2>
+
+            <ol>
+                <li class="link-text" data-page="diode.html">다이오드의 기능과 역할</li>
+                <li class="link-text" data-page="conductor.html">도체 / 부도체 / 반도체의 차이</li>
+                <li style="text-decoration: underline">p형 반도체와 n형 반도체</li>
+                <li class="link-text" data-page="pn_junction.html">p-n 접합 다이오드의 구조</li>
+                <li class="link-text" data-page="operation.html">다이오드의 동작 원리</li>
+            </ol>
+
+
+            <div class="navigation_bottom">
+                <p class="link-text" data-page="main.html">메인화면으로 돌아가기</p>
+            </div>
+        </nav>
+
+        <section class="main_sector">
+            (p형 반도체와 n형 반도체를 구분하는 carrier에 대해 기술할 페이지입니다.)
+        </section>
+
+
+    </div>
+
 </body>
+
 </html>
