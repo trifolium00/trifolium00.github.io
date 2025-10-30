@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <!-- 동적 페이지를 구성하기 위해 별도의 js 파일 연결 -->
     <script src="main.js"></script>
 
     <!-- 원활한 style 수정을 위해 별도의 css 파일 연결 -->
-    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-     <header class="head">
+
+<body class = "body_sector">
+
+    <!-- 본 페이지는 회로에 흔히 사용되는 다이오드의 원리를 이해하는 데 목적을 두었음. -->
+
+
+    <header class="head">
 
         <h1> 다이오드의 이해</h1>
 
@@ -21,29 +27,107 @@
         </div>
     </header>
 
-    <div class="container">
-        <nav class="navigation">
-        <h2> &nbsp;목차</h2>
+    <div class="section">
 
-        <ol>
-            <li class="link-text" data-page="diode.html">다이오드의 기능과 역할</li>
-            <li style="text-decoration: underline">도체 / 부도체 / 반도체의 차이</li>
-            <li class="link-text" data-page="carrier.html">p형 반도체와 n형 반도체</li>
-            <li class="link-text" data-page="pn_junction.html">p-n 접합 다이오드의 구조</li>
-            <li class="link-text" data-page="operation.html">다이오드의 동작 원리</li>
-        </ol>
+        <img src="image/diode2.jpg" alt="" width="400px">
+
+        <ul>
+            <li>본 사이트는 다이오드의 구조와 동작을 이해하기 위해 필요한 정보를 모아놓은 공간입니다.</li>
+            <li>각 항목을 클릭하면 관련 설명이 적혀있는 페이지로 이동합니다.</li>
+        </ul>
 
 
-        <div class="navigation_bottom">
-            <p class="link-text" data-page="main.html">메인화면으로 돌아가기</p>
-        </div>
-    </nav>
-
-    <section class="main_sector">
-        (도체와 부도체, 반도체의 차이에 대해 기술할 페이지입니다.)
-    </section>
-    
     </div>
-    
+
+    <div class="section" style="height: 50px">
+        <ul>
+            <li style="display : inline-block; margin-right: 30px" class="link-text" data-page="diode.html">1. 다이오드의 기능과
+                역할</li>
+            <li style="display : inline-block; margin-right: 30px" class="link-text" data-page="conductor.html">2. 도체 /
+                부도체 / 반도체의 차이</li>
+            <li style="display : inline-block; margin-right: 30px" class="link-text" data-page="carrier.html">3. p형 반도체와
+                n형 반도체</li>
+            <li style="display : inline-block; margin-right: 30px" class="link-text" data-page="pn_junction.html">4. p-n
+                접합 다이오드의 구조</li>
+            <li style="display : inline-block; margin-right: 30px" class="link-text" data-page="operation.html">5. 다이오드의
+                동작 원리</li>
+        </ul>
+    </div>
+
+    <div style="background-color: rgb(166, 226, 206); padding: 20px; border: 1px solid black">
+
+        <h3> 이 사이트를 찾아주신 분들께.. </h3>
+        아래의 간단한 설문에 참여해주시면 사이트의 개선에 정말 큰 도움이 됩니다.
+        <br>
+        설문에 참여한 인원 중 추첨을 통해 99street 아메리카노 기프티콘을 보내드립니다.
+        <br><br>
+
+        학년
+        <label for="opt1"><input type="radio" name="grade" value="1_grade" id="opt1">1학년</label>
+        <label for="opt2"><input type="radio" name="grade" value="2_grade" id="opt2">2학년</label>
+        <label for="opt3"><input type="radio" name="grade" value="3_grade" id="opt3">3학년</label>
+        <label for="opt4"><input type="radio" name="grade" value="4_grade" id="opt4">4학년</label>
+
+        <br><br>
+
+        본인 전공과의 관련 여부
+        <label for="opt5"><input type="radio" name="department" value="related" id="opt5">관련 있음 </label>
+        <label for="opt6"><input type="radio" name="department" value="unrelated" id="opt6">관련 없음</label>
+
+        <br><br>
+
+        사이트 평점
+        <label for="opt7"><input type="radio" name="score" value="1" id="opt7">1점</label>
+        <label for="opt8"><input type="radio" name="score" value="2" id="opt8">2점</label>
+        <label for="opt9"><input type="radio" name="score" value="3" id="opt9">3점</label>
+        <label for="opt10"><input type="radio" name="score" value="4" id="opt10">4점</label>
+        <label for="opt11"><input type="radio" name="score" value="5" id="opt11">5점</label>
+
+        <br>
+        <br>
+
+        웹페이지 구성에 대한 건의사항이나 문의가 있다면 아래에 적어주시면 감사하겠습니다.
+        <br>
+        <textarea rows="3" cols="100" placeholder="300자 이내로 적어주세요" maxlength="300"></textarea>
+
+        <p>
+            연락처:
+            <select>
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="017">017</option>
+            </select>
+            -
+            <input type="text" size="2" maxlength="4">
+            -
+            <input type="text" size="2" maxlength="4">
+        </p>
+
+        <p>
+            이메일:
+            <input type="text" size="10">
+            @
+            <select>
+                <option value="">- - 선택 - -</option>
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="kakao">kakao.com</option>
+                <option value="cnu">o.cnu.ac.kr</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="sign"><input type="checkbox" id="sign"> 개인정보 수집 및 이용에 동의합니다 </label>
+            <label for="sns"><input type="checkbox" id="sns"> 전기공학과의 다양한 소식을 SNS로 받습니다 </label>
+        </p>
+
+        <input type="submit">
+
+    </div>
+
+
+
+
 </body>
+
 </html>
