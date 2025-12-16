@@ -3,36 +3,39 @@
     background-color: rgb(185, 224, 241);
 }
 
+body{
+    margin : 0;
+    height: 100vh;
+    display : flex;
+    flex-direction : column;
+}
+
 .head {
     background-color: rgb(185, 224, 241);
-    height: 120px;
+    height: 13%;
     text-align: center;
 
     border: 1px solid black;
 }
 
 .container {
+    flex: 1;
     display: flex;
 }
 
 .navigation {
     float: left;
-    width: 15%;
     border: 1px solid black;
-    height: 740px;
     background-color: bisque;
-    padding-left: 20px;
-
+    width: 15%
 }
 
 .navigation_bottom {
-    margin-top: 300px;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 
 .main_sector {
     float: left;
-    width: 100%;
     border: 1px solid black;
     flex: 1;
     background-color: rgb(178, 241, 220);
@@ -42,12 +45,6 @@
 
 }
 
-#diode_sector {
-    background-image: url(image/circuit.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 h2 {
     padding-left: 60px;
@@ -57,4 +54,3 @@ h2 {
 ol {
     line-height: 3;
 }
- 
